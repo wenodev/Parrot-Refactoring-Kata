@@ -7,19 +7,11 @@ public enum ParrotTypeEnum {
     NORWEGIAN_BLUE;
 
     public static Parrot createParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
-        Parrot parrot;
-        switch (type) {
-            case EUROPEAN -> {
-                parrot = new EuropeanParrot();
-            }
-            case AFRICAN -> {
-                parrot = new AfricanParrot(numberOfCoconuts);
-            }
-            case NORWEGIAN_BLUE -> {
-                parrot = new NorwegianParrot(voltage, isNailed);
-            }
+        return switch (type) {
+            case EUROPEAN -> new EuropeanParrot();
+            case AFRICAN -> new AfricanParrot(numberOfCoconuts);
+            case NORWEGIAN_BLUE -> new NorwegianParrot(voltage, isNailed);
             default -> throw new IllegalArgumentException("Can not arrange");
-        }
-        return parrot;
+        };
     }
 }
