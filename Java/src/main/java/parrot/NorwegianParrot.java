@@ -11,4 +11,9 @@ public class NorwegianParrot extends Parrot {
     public double getSpeed() {
         return (isNailed) ? 0 : getBaseSpeed(voltage);
     }
+
+    @Override
+    public String getCry() {
+        return voltage > 0 ? "Bzzzzzz" : "...";
+    }
 }
