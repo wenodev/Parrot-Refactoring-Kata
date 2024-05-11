@@ -15,7 +15,8 @@ public class Parrot {
     }
 
     public static Parrot createParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
-        final Parrot parrot = new Parrot(type, numberOfCoconuts, voltage, isNailed);
+        final Parrot parrot;
+        parrot = new Parrot(type, numberOfCoconuts, voltage, isNailed);
         return parrot;
     }
 
