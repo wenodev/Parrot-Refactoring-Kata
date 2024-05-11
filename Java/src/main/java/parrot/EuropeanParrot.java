@@ -8,7 +8,7 @@ public class EuropeanParrot extends Parrot {
     }
 
     @Override
-    protected double getSpeed() {
+    public double getSpeed() {
         return getBaseSpeed();
     }
 
