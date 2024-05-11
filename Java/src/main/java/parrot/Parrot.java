@@ -2,9 +2,6 @@ package parrot;
 
 public abstract class Parrot {
 
-    protected Parrot() {
-    }
-
     public abstract double getSpeed();
 
     protected double getBaseSpeed() {
