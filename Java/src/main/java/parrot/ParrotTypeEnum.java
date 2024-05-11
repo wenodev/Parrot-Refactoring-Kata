@@ -9,9 +9,9 @@ public enum ParrotTypeEnum {
     public static Parrot createParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         Parrot parrot;
         switch (type) {
-            case EUROPEAN -> parrot = new EuropeanParrot(numberOfCoconuts, voltage, isNailed);
+            case EUROPEAN -> parrot = new EuropeanParrot(voltage, isNailed);
             case AFRICAN -> parrot = new AfricanParrot(numberOfCoconuts, voltage, isNailed);
-            case NORWEGIAN_BLUE -> parrot = new NorwegianParrot(numberOfCoconuts, voltage, isNailed);
+            case NORWEGIAN_BLUE -> parrot = new NorwegianParrot(voltage, isNailed);
             default -> throw new IllegalArgumentException("Should be unreachable");
         }
         return parrot;
