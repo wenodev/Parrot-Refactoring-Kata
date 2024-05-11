@@ -1,8 +1,8 @@
 package parrot;
 
 public class NorwegianParrot extends Parrot {
-    private double voltage;
-    private boolean isNailed;
+    private final double voltage;
+    private final boolean isNailed;
 
     protected NorwegianParrot(final double voltage, final boolean isNailed) {
         this.voltage = voltage;
