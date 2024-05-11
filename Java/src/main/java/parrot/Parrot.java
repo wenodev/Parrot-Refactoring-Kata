@@ -2,13 +2,11 @@ package parrot;
 
 public abstract class Parrot {
 
-    protected final ParrotTypeEnum type;
     protected final int numberOfCoconuts;
     protected final double voltage;
     protected final boolean isNailed;
 
-    protected Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
-        this.type = type;
+    protected Parrot(int numberOfCoconuts, double voltage, boolean isNailed) {
         this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
         this.isNailed = isNailed;
