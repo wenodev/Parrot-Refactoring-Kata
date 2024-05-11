@@ -1,10 +1,8 @@
 package parrot;
 
-import static parrot.ParrotTypeEnum.AFRICAN;
-
 public class AfricanParrot extends Parrot {
     protected AfricanParrot(final int numberOfCoconuts, final double voltage, final boolean isNailed) {
-        super(AFRICAN, numberOfCoconuts, voltage, isNailed);
+        super(numberOfCoconuts, voltage, isNailed);
     }
 
     @Override
