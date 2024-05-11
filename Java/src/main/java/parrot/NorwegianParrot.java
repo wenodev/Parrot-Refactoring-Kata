@@ -9,7 +9,7 @@ public class NorwegianParrot extends Parrot {
 
     @Override
     protected double getSpeed() {
-        return (isNailed) ? 0 : getBaseSpeed(voltage);
+        return isNailed ? 0 : Math.min(24.0, voltage * getBaseSpeed());
     }
 
     @Override
